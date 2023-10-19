@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
+
+@font-face {
+    font-family: 'cybero';
+    src: url('cybero.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(5, 90, 119), rgb(113, 39, 74));
+}
+
+.title{
+    text-align: center;
+    padding: 10px;
+}
+
+.title h2{
+    font-family: "cybero";
+}
+
+.title p{
+    width: 500px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+/*hide content*/
+
+.content{
+    display: none;
+}
+
+.tab-btn.active{
+    color: rgb(91, 14, 50);
+}
+
+.content.active{
+    display: block;
+}
+
+.content h4 {
+    margin-bottom: 10px;
+    font-family: "Oxygen Mono";
+}
+
+.content p {
+    width: 300px;
+    font-family: "Oxygen Mono";
+    font-size: .8em;
+}
+
+@media screen and (min-width: 800px) {
+        .about-img img {
+            border-radius: 10px 0 0 10px;
+        }
+    
+        .about-center {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    
+        .btn-container {
+            position: absolute;
+            background-color: rgb(113, 39, 74);
+            border-radius: 0 10px 0 0;
+        }
+    
+        .tab-btn {
+            padding: 10px 30.5px;
+            border: none;
+            border-radius: 0 10px 0 0;
+            background-image: linear-gradient(to right, rgb(5, 90, 119), rgb(113, 39, 74));
+            cursor: pointer;
+            font-family: "cybero";
+            font-size: 1em;
+        }
+
+        .tab-btn:hover{
+            color: #fff;
+        }
+    
+        .about-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            padding-bottom: 20px;
+            display: grid;
+            place-content: center;
+            height: 460px;
+        }
+}
+
+@media screen and (max-width: 799px) {
+    .title p {
+        width: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .about-img div {
+        text-align: center;
+    }
+
+    .about-img img{
+        border-radius: 10px;
+    }
+
+    .about-center {
+        margin-bottom: 30px;
+    }
+
+    .btn-container {
+        background-image: linear-gradient(to right, rgb(5, 90, 119), rgb(113, 39, 74));
+        text-align: center;
+    }
+
+    .tab-btn {
+        padding: 10px 30px;
+        border: none;
+        background-image: linear-gradient(to right, rgb(5, 90, 119), rgb(113, 39, 74));
+        cursor: pointer;
+        font-family: "cybero";
+        font-size: 1em;
+    }
+
+    .about-content {
+        background-color: #fff;
+        padding: 20px;
+        padding-bottom: 20px;
+        display: grid;
+        place-content: center;
+        height: 460px;
+    }
+}
